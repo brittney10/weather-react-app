@@ -25,6 +25,11 @@
 .App-link {
   color: #61dafb;
 }
+.App footer{
+  position: relative;
+  left:265px;
+  bottom:20px;
+}
 
 @keyframes App-logo-spin {
   from {
