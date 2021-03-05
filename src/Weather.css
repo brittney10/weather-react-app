@@ -1,25 +1,13 @@
+
 .Weather h1 {
     color: #ffffff;
     font-weight: 900;
-    margin: 20px;
-  }
-  .Weather h1::first-letter {
+    margin: 0;
+    padding: 10px;  }
+  .Weather h1:first-letter { 
     text-transform: capitalize;
   }
-  .Weather h5 {
-    font-size: 50px;
-  }
-  .Weather h4 {
-    color: #ffffff;
-    position: relative;
-    left: 10px;
-  }
-  .Weather p {
-    color: #ffffff;
-  }
-  .Weather a {
-    color: #ffffff;
-  }
+  
   .weather-units .active {
     text-decoration: none;
     cursor: default;
@@ -28,7 +16,7 @@
   .weather-units .active:hover {
     text-decoration: none;
   }
-  .units {
+  .Weather .units {
     text-decoration: none;
     font-size: 18px;
     color: #ffffff;
@@ -36,71 +24,29 @@
     top: -30px;
     left: 16px;
   }
+  .Weather img{
+    position: relative;
+    bottom: 20px;
+  }
   .Weather  .temperature {
     color: #ffffff;
-    font-size: 50px;
-    font-weight: 900;
-    position: relative;
-    left: 10px;
-  }
-  
-  .Weather .container {
-    font-family: "Spartan", sans-serif;
-    padding-top: 30px;
-    max-width: 750px;
-    margin-top: 50px;
-  
-    background: #1a2980; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #26d0ce,
-      #1a2980
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #26d0ce,
-      #1a2980
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  .Weather .search-bar-body {
-    padding: 15px;
+    font-size: 65px;
+    font-weight: 500;
   }
   .Weather .current-weather {
-    font-weight: 600;
-    font-size: 20px;
-    position: relative;
-    left: -10px;
     list-style: none;
     color: #ffffff;
+    position: relative;
+    right: 30px;
+    bottom: 15px;
   }
   .Weather .air-quality {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
-    position: relative;
-    left: 450px;
-    bottom: 90px;
     list-style: none;
+    position: relative;
+    top: 15px;
   }
   
-  .Weather .card-header {
-    font-weight: 700;
-  }
-  .Weather .btn-outline-primary,
-  .btn-outline-info,
-  .btn-outline-success {
-    text-align: left;
-    cursor: text;
-  }
-  
-  .Weather .icon {
-    position: relative;
-    bottom: 15px;
-  }
-  .Weather .weather-forecast-temperature {
-    color: #ffffff;
-    position: relative;
-    left: 20px;
-    font-weight: 900px;
-  }
   
