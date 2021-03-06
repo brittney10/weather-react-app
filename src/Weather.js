@@ -4,8 +4,8 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props){
-  const [weatherData, setWeatherData]= useState({loaded:false});
-  const [city, setCity] =useState(props.defaultCity);
+  const [weatherData, setWeatherData]= useState({loaded : false});
+  const [city, setCity] = useState(props.defaultCity);
   
   function handleResponse(response){
     console.log(response.data);

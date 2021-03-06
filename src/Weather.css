@@ -22,15 +22,16 @@
     color: #ffffff;
     position: relative;
     top: -30px;
-    left: 10px;
+    left: 5px;
   }
-  .Weather img{
+  .Weather canvas{
+    margin-right: 8px;
     position: relative;
-    bottom: 20px;
+    top:10px
   }
   .Weather  .temperature {
     color: #ffffff;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 500;
   }
   .Weather .current-weather {
