@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Weather.css";
+import FormattedDate from"./FormattedDate";
 import axios from "axios";
 
 export default function Weather(){
@@ -9,7 +10,7 @@ export default function Weather(){
     console.log(response.data);
     setWeatherData({
       loaded:true,
-      date:"Last updated: Monday 10:00",
+      date: new Date(response.data.dt*1000),
       city: response.data.name,
       temperature: response.data.main.temp,
       wind:  response.data.wind.speed,
@@ -57,7 +58,7 @@ export default function Weather(){
         <div className="col-6">
         <h1>{weatherData.city}</h1>
         <ul className="current-weather">
-          <li className="current-date">{weatherData.date}</li>
+          <li className="current-date"><FormattedDate date={weatherData.date} /></li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         </div>
@@ -85,7 +86,7 @@ export default function Weather(){
     </div>
     );
   }else{
-    const apiKey =`a995a1036d517aa4d70c6226c85fcce8`;
+  const apiKey =`a995a1036d517aa4d70c6226c85fcce8`;
   let city ="Los Angeles";
   let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
