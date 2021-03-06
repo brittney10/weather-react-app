@@ -16,8 +16,7 @@ export default function WeatherInfo(props){
 
       <div className="row">
         <div className="col-6">
-        
-        <img src={props.data.iconUrl} alt={props.data.description} className="icon" />
+        <WeatherIcon code={props.data.icon} />
         <span className="temperature">{Math.round(props.data.temperature)}</span>
         <span className="units">
           <a href="/">℃</a> |<a href="/">℉</a>
