@@ -1,0 +1,16 @@
+.WeatherForecast{
+    color: #ffffff;
+    text-align: center;
+
+}
+.WeatherForecast h5{
+    margin:0 auto;
+}
+.WeatherForecast canvas {
+    display:block;
+    margin: 3px auto;
+}
+
+.WeatherForecast p {
+    margin-top: 10px;
+}
