@@ -10,7 +10,7 @@ function App() {
       <Weather defaultCity="Los Angeles"/>
 
       <footer>
-        <a href="https://github.com/brittney10/weather-react-app" >Open-source code</a>
+        <a href="https://github.com/brittney10/weather-react-app" >Open-source code </a>
          by Brittney Isaacs
       </footer>
     </div>
